@@ -3,7 +3,8 @@
     "description": "Patterns tutorial",
     "autoload": {
         "psr-4": {
-            "Patterns\\Singleton\\": "src/Singleton/"
+            "Patterns\\Singleton\\": "src/Singleton/",
+            "Patterns\\Builder\\": "src/SQLBuilder/"
         }
     },
     "authors": [
