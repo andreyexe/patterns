@@ -4,7 +4,8 @@
     "autoload": {
         "psr-4": {
             "Patterns\\Singleton\\": "src/Singleton/",
-            "Patterns\\Builder\\": "src/SQLBuilder/"
+            "Patterns\\Builder\\": "src/SQLBuilder/",
+            "Patterns\\Facade\\": "src/Facade/"
         }
     },
     "authors": [

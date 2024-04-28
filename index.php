@@ -1,9 +1,12 @@
 <?php
 require 'vendor/autoload.php';
 
-use Patterns\Builder\AnothersqlBuilder;
-use Patterns\Builder\MysqlBuilder;
+use Patterns\Builder\AnothersqlBuilder,
+    Patterns\Builder\MysqlBuilder;
+
 use Patterns\Singleton\Singleton;
+
+use Patterns\Facade\Facade;
 
 
 // <singleton>
@@ -33,3 +36,9 @@ $query = $queryBuilder
     ->getSQL();
 echo $query . '</br>';
 // </builder>
+
+// <facade>
+echo '</br></br>';
+$facade = new Facade();
+$facade->run();
+// </facade>
