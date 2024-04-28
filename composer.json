@@ -1,0 +1,16 @@
+{
+    "name": "android/patterns",
+    "description": "Patterns tutorial",
+    "autoload": {
+        "psr-4": {
+            "Patterns\\Singleton\\": "src/Singleton/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Android0304"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
