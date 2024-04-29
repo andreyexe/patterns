@@ -5,7 +5,9 @@
         "psr-4": {
             "Patterns\\Singleton\\": "src/Singleton/",
             "Patterns\\Builder\\": "src/SQLBuilder/",
-            "Patterns\\Facade\\": "src/Facade/"
+            "Patterns\\Facade\\": "src/Facade/",
+            "Patterns\\Factory\\": "src/Factory/",
+            "Patterns\\AbstractFactory\\": "src/AbstractFactory/"
         }
     },
     "authors": [

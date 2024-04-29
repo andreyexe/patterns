@@ -8,6 +8,9 @@ use Patterns\Singleton\Singleton;
 
 use Patterns\Facade\Facade;
 
+use Patterns\Factory\ConcreteCreator1,
+    Patterns\Factory\ConcreteCreator2;
+
 
 // <singleton>
 $single = Singleton::getInstance();
@@ -42,3 +45,11 @@ echo '</br></br>';
 $facade = new Facade();
 $facade->run();
 // </facade>
+
+// <factory>
+echo '</br></br>';
+$creator1 = new ConcreteCreator1();
+echo "creator1:  " . $creator1->someOperation(). '</br>';
+$creator2 = new ConcreteCreator2();
+echo "creator2:  " . $creator2->someOperation(). '</br>';
+// </factory>
