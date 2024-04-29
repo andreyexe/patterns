@@ -11,6 +11,9 @@ use Patterns\Facade\Facade;
 use Patterns\Factory\ConcreteCreator1,
     Patterns\Factory\ConcreteCreator2;
 
+use Patterns\AbstractFactory\ConcreteFactory1,
+    Patterns\AbstractFactory\ConcreteFactory2;
+
 
 // <singleton>
 $single = Singleton::getInstance();
@@ -53,3 +56,19 @@ echo "creator1:  " . $creator1->someOperation(). '</br>';
 $creator2 = new ConcreteCreator2();
 echo "creator2:  " . $creator2->someOperation(). '</br>';
 // </factory>
+
+
+// <abstract factory>
+echo '</br></br>';
+$factory1 = new ConcreteFactory1();
+$productA = $factory1->createProductA();
+$productB = $factory1->createProductB();
+echo $productB->usefulFunctionB() . "</br>";
+echo $productB->anotherUsefulFunctionB($productA) . "</br></br>";
+
+$factory2 = new ConcreteFactory2();
+$productA = $factory2->createProductA();
+$productB = $factory2->createProductB();
+echo $productB->usefulFunctionB() . "</br>";
+echo $productB->anotherUsefulFunctionB($productA) . "</br></br>";
+// </abstract factory>
